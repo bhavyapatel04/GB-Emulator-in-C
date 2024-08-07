@@ -4,6 +4,6 @@ void timer_init() {
 
 }
 
-void tiemr_ticket() {
-    
+void timer_ticket() {
+
 }
