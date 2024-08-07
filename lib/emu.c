@@ -40,4 +40,17 @@ int emu_run(int argc, char** argv) {
     ctx.running = true;
     ctx.paused = false;
     ctx.ticks = 0;
+
+    while (ctx.running) {
+        if (ctx.paused) {
+            delay(10);
+            continue;
+        }
+        if(!cpu_step()) {
+            printf("CPU step failed and stopped\n");
+            return -3;
+        }
+        ctx.ticks++;
+    }
+    return 0;
 }
