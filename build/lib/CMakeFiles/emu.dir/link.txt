@@ -1,0 +1,2 @@
+/usr/bin/ar qc libemu.a CMakeFiles/emu.dir/bus.c.o CMakeFiles/emu.dir/cart.c.o CMakeFiles/emu.dir/cpu.c.o CMakeFiles/emu.dir/emu.c.o CMakeFiles/emu.dir/ppu.c.o CMakeFiles/emu.dir/timer.c.o
+/usr/bin/ranlib libemu.a
